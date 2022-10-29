@@ -9,7 +9,7 @@ public class SampleTest {
 
     public static void main(String[] args) {
         String input = "Harry chases around grass mayur manish mal";
-
+//test
         System.out.println(Arrays.stream(input.split(" ")).filter(data -> data.chars().mapToObj(c -> (char) c).collect(Collectors.toSet()).size() == data.length()).collect(Collectors.toList()));
         System.out.println(Arrays.asList(input.split(" ")).stream().filter(data -> data.chars().mapToObj(c -> (char) c).collect(Collectors.toSet()).size() == data.length()).collect(Collectors.toList()));
     }

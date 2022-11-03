@@ -1,8 +1,6 @@
 package com.example.demo.map;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class SampleTest {
@@ -12,6 +10,7 @@ public class SampleTest {
 //test
         System.out.println(Arrays.stream(input.split(" ")).filter(data -> data.chars().mapToObj(c -> (char) c).collect(Collectors.toSet()).size() == data.length()).collect(Collectors.toList()));
         System.out.println(Arrays.asList(input.split(" ")).stream().filter(data -> data.chars().mapToObj(c -> (char) c).collect(Collectors.toSet()).size() == data.length()).collect(Collectors.toList()));
+
     }
 
 

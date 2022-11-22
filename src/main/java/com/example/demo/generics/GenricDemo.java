@@ -8,5 +8,6 @@ public class GenricDemo {
         Printer<Double> doublePrinter = new Printer<>(23.33);
         integerPrinter.print();
         stringPrinter.print();
+        doublePrinter.print();
     }
 }
